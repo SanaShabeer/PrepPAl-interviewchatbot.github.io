@@ -15,6 +15,22 @@
 </body>
 </html>
 
-<link rel="stylesheet" href="styles.css">
-<script src="scripts.js"></script>
 
+
+<div id="chatbox">
+    <div id="chatlog"></div>
+    <input type="text" id="userinput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  <script>
+    function sendMessage() {
+      var userInput = document.getElementById('userinput').value;
+      var chatLog = document.getElementById('chatlog');
+      chatLog.innerHTML += '<p>User: ' + userInput + '</p>';
+      document.getElementById('userinput').value = '';
+      // Here, you can add code to handle the chatbot logic
+    }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
