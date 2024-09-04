@@ -1,6 +1,4 @@
-// scripts.js
-
-document.getElementById('start-interview-btn').addEventListener('click', function() {
-    alert('The interview has started. Please follow the prompts.');
-    // You can add code here to start the chatbot or redirect to the chatbot page
-});
+function startChat() {
+    document.getElementById('chatbot-instructions').innerText = "The chatbot will now ask you a series of interview questions. Please answer them to the best of your ability.";
+  }
+  

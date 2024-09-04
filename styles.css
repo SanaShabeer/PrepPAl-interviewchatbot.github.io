@@ -1,3 +1,12 @@
+body {
+    background: linear-gradient(135deg, #f06, #f79);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
 #instructions {
     background-color: #fff;
     padding: 20px;
@@ -37,4 +46,78 @@ li {
 
 #start-interview-btn:hover {
     background-color: #0056b3;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#chatbot {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.chatbox {
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.chatbox p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.chatbox button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbox button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .chatbox p {
+        font-size: 1em;
+    }
+
+    #start-interview-btn {
+        width: 100%;
+        font-size: 14px;
+    }
 }
