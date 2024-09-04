@@ -7,38 +7,66 @@
     <title>Chatbot Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#chatbot">Chatbot</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Chatbot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chatbot">Chatbot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section id="home">
-        <div id="instructions">
-            <h1>Welcome to the Virtual Job Interview Chatbot</h1>
-            <p>This website will guide you through a virtual job interview process where you can practice and improve your skills.</p>
-            <ol>
-                <li>Choose a job role to start the interview.</li>
-                <li>Answer the questions displayed on the screen.</li>
-                <li>Receive feedback and improve your skills.</li>
-            </ol>
-            <button id="start-interview-btn">Start Interview</button>
+    <header class="hero-section" id="home">
+        <div class="container text-center">
+            <h1 class="display-4">Welcome to the Virtual Job Interview Chatbot</h1>
+            <p class="lead">Practice and improve your interview skills with our interactive chatbot!</p>
+            <a href="#chatbot" class="btn btn-primary btn-lg">Start Now</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About the Chatbot</h2>
+            <p>Our chatbot is designed to help you prepare for job interviews by asking questions, providing feedback, and helping you improve your responses.</p>
         </div>
     </section>
 
-    <section id="chatbot">
-        <h2>Virtual Job Interview Chatbot</h2>
-        <div class="chatbox">
-            <p id="chatbot-instructions">
-                Welcome to the virtual job interview! Our chatbot will guide you through a series of questions to help you prepare.
-            </p>
-            <button onclick="startChat()">Start Chat</button>
+    <section id="chatbot" class="py-5 bg-light">
+        <div class="container">
+            <h2>Virtual Job Interview Chatbot</h2>
+            <div class="chatbox p-4 rounded">
+                <p id="chatbot-instructions">
+                    Welcome to the virtual job interview! Our chatbot will guide you through a series of questions to help you prepare.
+                </p>
+                <button class="btn btn-dark" onclick="startChat()">Start Chat</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out!</p>
         </div>
     </section>
 
@@ -65,6 +93,7 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 
