@@ -7,19 +7,19 @@ body {
 }
 
 .hero-section {
-    background-color: #007bff; /* Background color for hero section */
-    color: white; /* Text color for hero section */
+    background-color: #45A29E; /* Updated background color */
+    color: #333; /* Dark color for text */
     padding: 50px 0;
 }
 
 .hero-section h1 {
     font-size: 3rem; /* Font size for heading */
-    color: white; /* Ensure text color contrasts with background */
+    color: #333; /* Dark color for heading text */
 }
 
 .hero-section p {
     font-size: 1.5rem; /* Font size for paragraph text */
-    color: white; /* Ensure text color contrasts with background */
+    color: #333; /* Dark color for paragraph text */
 }
 
 section {
