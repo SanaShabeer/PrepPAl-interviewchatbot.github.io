@@ -1,3 +1,3 @@
 function startChat() {
-    window.location.href = "login.html";
+    alert("Chat started!");
 }
