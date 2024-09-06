@@ -1,55 +1,87 @@
+/* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #45A29E;  /* Changed the background to #45A29E */
     color: #333;
 }
 
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #45A29E;
+}
+
+/* Login and Sign-Up buttons styles */
+.navbar .auth-links {
+    margin-left: auto;
+}
+
+.navbar .auth-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #45A29E;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .auth-links a:hover {
+    background-color: white;
+    color: #45A29E;
+}
+
+/* Hero Section styles */
 .hero-section {
-    background-color: #45A29E; /* Updated background color */
-    color: #333; /* Dark color for text */
+    text-align: center;
     padding: 50px 0;
 }
 
 .hero-section h1 {
-    font-size: 3rem; /* Font size for heading */
-    color: #333; /* Dark color for heading text */
+    font-size: 3rem;
+    color: #333;  /* Dark color for heading */
 }
 
 .hero-section p {
-    font-size: 1.5rem; /* Font size for paragraph text */
-    color: #333; /* Dark color for paragraph text */
+    font-size: 1.5rem;
+    color: #333;  /* Dark color for subtext */
 }
 
-section {
-    padding: 60px 0;
-}
-
-.image-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.chatbox {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Additional styling if needed later */
 footer {
+    padding: 10px 0;
+    text-align: center;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
