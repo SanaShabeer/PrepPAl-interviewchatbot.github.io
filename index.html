@@ -11,10 +11,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192524;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Chatbot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,36 +34,39 @@
                     </li>
                 </ul>
                 <div class="auth-links">
-                    <a href="login.html">Login</a>
-                    <a href="signup.html">Sign Up</a>
+                    <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero-section" id="home">
+    <header class="hero-section" id="home" style="background-color: #192524;">
         <div class="container text-center">
-            <h1 class="display-4">Welcome to the Virtual Job Interview Chatbot</h1>
-            <p class="lead">Practice and improve your interview skills with our interactive chatbot!</p>
-            <a href="login.html" class="btn btn-primary btn-lg">Start Now</a>
+            <h1 class="display-4" style="color: #EFECE9;">Welcome to the Virtual Job Interview Chatbot</h1>
+            <p class="lead" style="color: #EFECE9;">Practice and improve your interview skills with our interactive chatbot!</p>
+            <a href="#" class="btn btn-primary btn-lg" style="background-color: #3C5759; border: none;"
+                data-bs-toggle="modal" data-bs-target="#loginModal">Start Now</a>
         </div>
     </header>
 
     <section id="about" class="py-5">
         <div class="container">
             <h2>About the Chatbot</h2>
-            <p>Our chatbot is designed to help you prepare for job interviews by asking questions, providing feedback, and helping you improve your responses.</p>
+            <p>Our chatbot is designed to help you prepare for job interviews by asking questions, providing feedback, and
+                helping you improve your responses.</p>
         </div>
     </section>
 
     <section id="chatbot" class="py-5 bg-light">
         <div class="container">
             <h2>Virtual Job Interview Chatbot</h2>
-            <div class="chatbox p-4 rounded">
+            <div class="chatbox p-4 rounded" style="background-color: #D1EBD8;">
                 <p id="chatbot-instructions">
-                    Welcome to the virtual job interview! Our chatbot will guide you through a series of questions to help you prepare.
+                    Welcome to the virtual job interview! Our chatbot will guide you through a series of questions to help
+                    you prepare.
                 </p>
-                <button class="btn btn-dark" onclick="startChat()">Start Chat</button>
+                <button class="btn" style="background-color: #959D90; color: #192524;" onclick="startChat()">Start Chat</button>
             </div>
         </div>
     </section>
@@ -74,13 +78,15 @@
         </div>
     </section>
 
-    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionModal">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionModal"
+        style="background-color: #DDD5CE; border: none; color: #192524;">
         View Instructions
     </button>
 
+    <!-- Instructions Modal -->
     <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="background-color: #EFECE9;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -92,6 +98,60 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #D1EBD8;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn" style="background-color: #3C5759; color: #EFECE9;">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #D1EBD8;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn" style="background-color: #3C5759; color: #EFECE9;">Sign Up</button>
+                    </form>
                 </div>
             </div>
         </div>
