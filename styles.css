@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #45A29E;  /* Changed the background to #45A29E */
+    background-color: #45A29E;  /* Background color of the body */
     color: #333;
 }
 
@@ -61,16 +61,17 @@ body {
 .hero-section {
     text-align: center;
     padding: 50px 0;
+    background-color: #00563F;  /* Castleton Green background */
 }
 
 .hero-section h1 {
     font-size: 3rem;
-    color: #333;  /* Dark color for heading */
+    color: white;  /* White color for the heading to contrast with green background */
 }
 
 .hero-section p {
     font-size: 1.5rem;
-    color: #333;  /* Dark color for subtext */
+    color: white;  /* White color for subtext to contrast with green background */
 }
 
 /* Additional styling if needed later */
