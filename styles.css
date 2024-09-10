@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #45A29E;  /* Background color of the body */
-    color: #333;
+    background-color: #D1EBD8;  /* Updated background color */
+    color: #192524; /* Dark text color */
 }
 
 /* Navigation bar styles */
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #3C5759; /* Updated navbar color */
     padding: 10px 20px;
 }
 
@@ -29,13 +29,13 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: #EFECE9; /* Updated link color */
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #45A29E;
+    color: #D1EBD8; /* Updated hover color */
 }
 
 /* Login and Sign-Up buttons styles */
@@ -45,41 +45,41 @@ body {
 
 .navbar .auth-links a {
     text-decoration: none;
-    color: white;
+    color: #3C5759; /* Updated button text color */
     padding: 10px 20px;
-    background-color: #45A29E;
+    background-color: #EFECE9; /* Updated button background */
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar .auth-links a:hover {
-    background-color: white;
-    color: #45A29E;
+    background-color: #192524; /* Updated hover background */
+    color: #EFECE9; /* Updated hover text color */
 }
 
 /* Hero Section styles */
 .hero-section {
     text-align: center;
     padding: 50px 0;
-    background-color: #00563F;  /* Castleton Green background */
+    background-color: #959D90;  /* Updated hero section background */
 }
 
 .hero-section h1 {
     font-size: 3rem;
-    color: white;  /* White color for the heading to contrast with green background */
+    color: #EFECE9;  /* Updated heading color */
 }
 
 .hero-section p {
     font-size: 1.5rem;
-    color: white;  /* White color for subtext to contrast with green background */
+    color: #EFECE9;  /* Updated subtext color */
 }
 
 /* Additional styling if needed later */
 footer {
     padding: 10px 0;
     text-align: center;
-    background-color: #333;
-    color: white;
+    background-color: #3C5759; /* Updated footer background */
+    color: #EFECE9; /* Updated footer text color */
 }
 
 footer p {
