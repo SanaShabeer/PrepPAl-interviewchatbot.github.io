@@ -74,6 +74,11 @@ body {
     color: #EFECE9;  /* Updated subtext color */
 }
 
+/* Modal styles */
+.modal-content {
+    border-radius: 0;
+}
+
 /* Additional styling if needed later */
 footer {
     padding: 10px 0;
