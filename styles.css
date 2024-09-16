@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #D1EBD8;  /* Updated background color */
-    color: #192524; /* Dark text color */
+    background-color: #D1EBD8;
+    color: #192524;
 }
 
 /* Navigation bar styles */
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3C5759; /* Updated navbar color */
+    background-color: #3C5759;
     padding: 10px 20px;
 }
 
@@ -29,13 +29,13 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #EFECE9; /* Updated link color */
+    color: #EFECE9;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #D1EBD8; /* Updated hover color */
+    color: #D1EBD8;
 }
 
 /* Login and Sign-Up buttons styles */
@@ -45,44 +45,70 @@ body {
 
 .navbar .auth-links a {
     text-decoration: none;
-    color: #3C5759; /* Updated button text color */
+    color: #3C5759;
     padding: 10px 20px;
-    background-color: #EFECE9; /* Updated button background */
+    background-color: #EFECE9;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar .auth-links a:hover {
-    background-color: #192524; /* Updated hover background */
-    color: #EFECE9; /* Updated hover text color */
+    background-color: #192524;
+    color: #EFECE9;
 }
 
 /* Hero Section styles */
 .hero-section {
     text-align: center;
     padding: 50px 0;
-    background-color: #959D90;  /* Updated hero section background */
+    background-color: #959D90;
 }
 
 .hero-section h1 {
     font-size: 3rem;
-    color: #EFECE9;  /* Updated heading color */
+    color: #EFECE9;
 }
 
 .hero-section p {
     font-size: 1.5rem;
-    color: #EFECE9;  /* Updated subtext color */
+    color: #EFECE9;
+}
+
+/* Contact Section styles */
+#contact {
+    padding: 40px 0;
+    background-color: #D1EBD8;
+}
+
+#contact h2 {
+    color: #192524;
+}
+
+#contact .contact-info {
+    margin-top: 20px;
+}
+
+#contact .contact-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #3C5759;
+}
+
+#contact i {
+    color: #192524;
+    margin-right: 10px;
 }
 
 /* Additional styling if needed later */
 footer {
     padding: 10px 0;
     text-align: center;
-    background-color: #3C5759; /* Updated footer background */
-    color: #EFECE9; /* Updated footer text color */
+    background-color: #3C5759;
+    color: #EFECE9;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+
