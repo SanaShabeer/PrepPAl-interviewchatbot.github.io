@@ -82,3 +82,38 @@ footer {
     text-align: center;
 }
 
+/* Features Section Styles */
+.feature-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-item i {
+    color: #3C5759;
+    margin-bottom: 10px;
+}
+
+.feature-item h4 {
+    margin-top: 15px;
+    color: #192524;
+}
+
+.feature-item p {
+    color: #333;
+}
+
+/* Animation for Features Section */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-item {
+    animation: fadeIn 1s ease-in-out;
+}
