@@ -13,11 +13,12 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #192524;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="2.PNG" alt="PrepPalAI Logo" class="logo" style="width: 40px; height: 40px; margin-right: 10px;"> <!-- Added logo here -->
-                PrepPalAI <!-- Updated the brand name -->
+                <img src="1.PNG" alt="PrepPalAI Logo" class="logo" style="width: 40px; height: 40px; margin-right: 10px;"> 
+                PrepPalAI
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +39,8 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="auth-links">
+                <!-- Fixing buttons to top-right with ms-auto -->
+                <div class="ms-auto">
                     <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                     <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
                 </div>
@@ -46,6 +48,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero-section" id="home" style="background-color: #192524;">
         <div class="container text-center">
             <h1 class="display-4" style="color: #EFECE9;">Welcome to the Virtual Job Interview Chatbot</h1>
@@ -55,32 +58,32 @@
         </div>
     </header>
 
+    <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
             <h2>About the Chatbot</h2>
-            <p>Our chatbot is designed to help you prepare for job interviews by asking questions, providing feedback, and
-                helping you improve your responses.</p>
+            <p>Our chatbot is designed to help you prepare for job interviews by asking questions, providing feedback, and helping you improve your responses.</p>
         </div>
     </section>
 
+    <!-- Chatbot Section -->
     <section id="chatbot" class="py-5 bg-light">
         <div class="container">
             <h2>Virtual Job Interview Chatbot</h2>
             <div class="chatbox p-4 rounded" style="background-color: #D1EBD8;">
                 <p id="chatbot-instructions">
-                    Welcome to the virtual job interview! Our chatbot will guide you through a series of questions to help
-                    you prepare.
+                    Welcome to the virtual job interview! Our chatbot will guide you through a series of questions to help you prepare.
                 </p>
                 <button class="btn" style="background-color: #959D90; color: #192524;" onclick="startChat()">Start Chat</button>
             </div>
         </div>
     </section>
 
-    <!-- Updated Contact Section with Icons -->
+    <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container text-center">
             <h2>Contact Us</h2>
-            <p>We’re here to help! Reach out to us with any questions or feedback, and we'll get back to you as soon as possible.</p>
+            <p>We’re here to help! Reach out to us with any questions or feedback, and we'll get back to you as soon as possible.</p>
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> Email: <a href="mailto:botqueries2024@gmail.com">botqueries2024@gmail.com</a></p>
                 <p><i class="fas fa-phone"></i> Phone: 9019440622, 9036047331</p>
@@ -88,6 +91,7 @@
         </div>
     </section>
 
+    <!-- View Instructions Button -->
     <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#instructionModal"
         style="background-color: #DDD5CE; border: none; color: #192524;">
         View Instructions
@@ -167,12 +171,8 @@
         </div>
     </div>
 
-    <footer class="text-center py-3" style="background-color: #192524; color: #EFECE9;">
-        <p>© 2024 PrepPalAI. All rights reserved.</p>
-    </footer>
-
+    <!-- Bootstrap and JS links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
