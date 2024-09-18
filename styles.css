@@ -1,17 +1,34 @@
-/* General Styles */
-body {
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    background-color: #EFECE9;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     color: #192524;
 }
 
 /* Navbar Styles */
+.navbar {
+    padding: 10px 20px;
+}
+
 .navbar-brand {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
+    color: #EFECE9;
+}
+
+.navbar-nav .nav-link {
+    color: #EFECE9;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #D1EBD8;
 }
 
 /* Hero Section Styles */
@@ -20,100 +37,187 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../assets/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #EFECE9;
     text-align: center;
-    background-color: #192524;
 }
 
 .hero-section h1 {
-    color: #EFECE9;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.hero-section p {
-    color: #EFECE9;
+.hero-section .btn-primary {
+    padding: 10px 20px;
+    font-size: 1.2rem;
 }
 
-/* Chatbox Styles */
-.chatbox {
+/* About Section Styles */
+#about {
+    background-color: #DDD5CE;
+    padding: 60px 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Chatbot Section Styles */
+#chatbot {
     background-color: #D1EBD8;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 60px 20px;
 }
 
-.chatbox button {
-    background-color: #959D90;
+#chatbot h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chatbox p {
+    font-size: 1.2rem;
+}
+
+.chatbox .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+/* Features Section Styles */
+#features {
+    padding: 60px 20px;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-item i {
+    color: #192524;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Updated Feature Section for "Boost Your Confidence" */
+#features .feature-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#features .feature-item p {
+    font-size: 1.1rem;
     color: #192524;
 }
 
-/* Contact Section */
-.contact-info p {
+/* Moving the "Boost Your Confidence" to the top */
+#features .row .col-md-4:nth-child(2) {
+    order: -1;
+}
+
+/* Updated Font for "Your Dream Job is Just a Conversation Away" */
+#features h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #3C5759;
+    letter-spacing: 1px;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #DDD5CE;
+    padding: 60px 20px;
     color: #192524;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
 }
 
 .contact-info i {
-    margin-right: 8px;
+    color: #192524;
+    margin-right: 10px;
 }
 
-/* Buttons */
+/* Button Styles */
 .btn-primary {
     background-color: #3C5759;
     border: none;
 }
 
-.btn-light {
-    background-color: #EFECE9;
-    color: #192524;
+.btn-primary:hover {
+    background-color: #2A3F40;
 }
 
 .btn-info {
-    background-color: #DDD5CE;
+    background-color: #959D90;
     border: none;
     color: #192524;
 }
 
+.btn-info:hover {
+    background-color: #757D72;
+}
+
+.btn-secondary {
+    background-color: #959D90;
+    color: #192524;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #757D72;
+}
+
+/* Modal Styles */
 .modal-content {
     background-color: #D1EBD8;
-}
-
-/* Footer Styles (if applicable) */
-footer {
-    background-color: #192524;
-    color: #EFECE9;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Features Section Styles */
-.feature-item {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.feature-item i {
-    color: #3C5759;
-    margin-bottom: 10px;
-}
-
-.feature-item h4 {
-    margin-top: 15px;
     color: #192524;
 }
 
-.feature-item p {
-    color: #333;
+.modal-header {
+    border-bottom: 1px solid #3C5759;
 }
 
-/* Animation for Features Section */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.modal-footer {
+    border-top: 1px solid #3C5759;
 }
 
-.feature-item {
-    animation: fadeIn 1s ease-in-out;
+/* Instruction Modal */
+#instructionModal .modal-body {
+    font-size: 1.1rem;
+    color: #192524;
 }
