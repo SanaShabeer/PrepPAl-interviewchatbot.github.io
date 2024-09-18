@@ -1,114 +1,103 @@
-/* General body styles */
+/* General reset and styles */
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #D1EBD8;
-    color: #192524;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #ffffff;
 }
 
-/* Navigation bar styles */
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3C5759;
-    padding: 10px 20px;
+    background-color: #1b1b1b;
+    padding: 15px;
 }
 
-.navbar ul {
+nav ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-.navbar ul li {
+nav ul li {
     margin-right: 20px;
 }
 
-.navbar ul li a {
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: #EFECE9;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
-.navbar ul li a:hover {
-    color: #D1EBD8;
+nav ul li a:hover {
+    color: #f0a500;
 }
 
-/* Login and Sign-Up buttons styles */
-.navbar .auth-links {
-    margin-left: auto;
+/* Added styles for the new logo and brand name */
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-.navbar .auth-links a {
+.logo {
+    width: 40px; /* Adjust this size to suit your layout */
+    height: 40px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
     text-decoration: none;
-    color: #3C5759;
+}
+
+/* Section styles */
+section {
+    padding: 50px;
+}
+
+#home {
+    text-align: center;
+    background-color: #333;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 48px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+.btn-start {
     padding: 10px 20px;
-    background-color: #EFECE9;
+    background-color: #f0a500;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navbar .auth-links a:hover {
-    background-color: #192524;
-    color: #EFECE9;
+.btn-start:hover {
+    background-color: #ffa726;
 }
 
-/* Hero Section styles */
-.hero-section {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #959D90;
+/* Other sections */
+#about, #chatbot, #contact {
+    background-color: #444;
 }
 
-.hero-section h1 {
-    font-size: 3rem;
-    color: #EFECE9;
+#about h2, #chatbot h2, #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.hero-section p {
-    font-size: 1.5rem;
-    color: #EFECE9;
-}
-
-/* Contact Section styles */
-#contact {
-    padding: 40px 0;
-    background-color: #D1EBD8;
-}
-
-#contact h2 {
-    color: #192524;
-}
-
-#contact .contact-info {
-    margin-top: 20px;
-}
-
-#contact .contact-info p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #3C5759;
-}
-
-#contact i {
-    color: #192524;
-    margin-right: 10px;
-}
-
-/* Additional styling if needed later */
-footer {
-    padding: 10px 0;
-    text-align: center;
-    background-color: #3C5759;
-    color: #EFECE9;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+#about p, #chatbot p, #contact p {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
