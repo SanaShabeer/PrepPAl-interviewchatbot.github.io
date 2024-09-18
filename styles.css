@@ -1,103 +1,84 @@
-/* General reset and styles */
+/* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2b2b2b;
-    color: #ffffff;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1b1b1b;
-    padding: 15px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #f0a500;
-}
-
-/* Added styles for the new logo and brand name */
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 40px; /* Adjust this size to suit your layout */
-    height: 40px;
-    margin-right: 10px; /* Space between logo and text */
-}
-
-.brand-name {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* Section styles */
-section {
-    padding: 50px;
-}
-
-#home {
-    text-align: center;
-    background-color: #333;
-    padding: 100px 20px;
-}
-
-#home h1 {
-    font-size: 48px;
-}
-
-#home p {
-    font-size: 20px;
-}
-
-.btn-start {
-    padding: 10px 20px;
-    background-color: #f0a500;
+    font-family: 'Roboto', sans-serif;
     color: #333;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
 }
 
-.btn-start:hover {
-    background-color: #ffa726;
+h1, h2 {
+    color: #192524;
 }
 
-/* Other sections */
-#about, #chatbot, #contact {
-    background-color: #444;
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
 }
 
-#about h2, #chatbot h2, #contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #192524;
 }
 
-#about p, #chatbot p, #contact p {
-    font-size: 18px;
-    line-height: 1.5;
+.hero-section h1 {
+    color: #EFECE9;
+}
+
+.hero-section p {
+    color: #EFECE9;
+}
+
+/* Chatbox Styles */
+.chatbox {
+    background-color: #D1EBD8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chatbox button {
+    background-color: #959D90;
+    color: #192524;
+}
+
+/* Contact Section */
+.contact-info p {
+    color: #192524;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3C5759;
+    border: none;
+}
+
+.btn-light {
+    background-color: #EFECE9;
+    color: #192524;
+}
+
+.btn-info {
+    background-color: #DDD5CE;
+    border: none;
+    color: #192524;
+}
+
+.modal-content {
+    background-color: #D1EBD8;
+}
+
+/* Footer Styles (if applicable) */
+footer {
+    background-color: #192524;
+    color: #EFECE9;
+    padding: 10px;
+    text-align: center;
 }
 
